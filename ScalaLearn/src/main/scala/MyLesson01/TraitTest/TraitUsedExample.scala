@@ -9,7 +9,7 @@ trait TAction{
 }
 //接着作为被加入方面，定义加入了前置处理和后置处理的特征TBeforeAfter
 trait TBeforeAfter extends TAction{
-  
+
   abstract override def doAction= {
     println("/entry before-action.") // doAction的前置处理
     super.doAction //调用原来的处理
